@@ -6,10 +6,11 @@ import {
   MenuFoldOutlined
 } from '@ant-design/icons';
 import FormApp from '../components/pages/FormApp';
+import SideNav from '../components/layouts/SideNav';
+import { Layout } from 'antd';
 const { Header, Sider, Content} = Layout;
 const ApplicationRoutes = () => {
   const [collapse, setCollapse] = useState(false);
-
   return (
     <Router>
       <Layout>
@@ -24,10 +25,15 @@ const ApplicationRoutes = () => {
                           style: {color: "#fff"}
                       })}
             </Header>
-      <Switch>
-        <Route exact path={'/list'} component={List}/>
-        <Route exact path={'/list'} component={FormApp}/>
-      </Switch>
+            <Content 
+              style={{margin: '24px 16px', padding: 24, minHeight: "calc(100vh - 114px)", background: "#fff"}}>
+              <Switch>
+                <Route exact path={'/list'} component={List}/>
+                <Route exact path={'/list'} component={FormApp}/>
+              </Switch>
+            </Content>
+          </Layout>
+        </Layout>
     </Router>
   ) 
 }
