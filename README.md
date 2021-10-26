@@ -15,5 +15,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 
-Also make sure our json server is working perfectly.
-## json-server --watch server/db.json
+Also make sure our json server is working perfectly. kindly run
+### json-server --watch server/db.json
