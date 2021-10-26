@@ -3,22 +3,25 @@ import { Menu } from 'antd';
 import './head.scss'
 import { useHistory } from 'react-router';
 
-// import {
-//     UserOutlined,
-//     VideoCameraOutlined,
-//     UploadOutlined,
-//   } from '@ant-design/icons';
+import {
+    UserOutlined,
+    VideoCameraOutlined,
+    UploadOutlined,
+  } from '@ant-design/icons';
 
 const SideNav = () => {
   const history = useHistory()
   const HandleUserClick = () => {
-    history.push(/)
+    history.push('/')
   }
   return (
     <div>
       <div className='head'></div>
       <Menu theme='dark' mode='inline' defaultSelectedKeys={['1']}>
-        <Menu.Item key='1' onClick={HandleUserClick}></Menu.Item>
+        <Menu.Item key='1' onClick={HandleUserClick}>
+          <UserOutlined />
+          <span>users</span>
+        </Menu.Item>
       </Menu>
     </div>
   )
