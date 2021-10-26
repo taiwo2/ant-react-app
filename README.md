@@ -12,4 +12,4 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser. <
 [live demo](https://gallant-joliot-5b1dcc.netlify.app/list) <br>
 
 Also make sure our json server is working perfectly. kindly run to save the form to db.json
- `json-server --watch server/db.json`
+###  `json-server --watch server/db.json`
