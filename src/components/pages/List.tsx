@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {Table, Row, Col, Button, Typography} from 'antd';
 import {useHistory} from 'react-router';
 import axios from 'axios';
@@ -7,7 +7,7 @@ import axios from 'axios';
 const { Title} = Typography
 const List = () => {
 
-  const history =useHistory();
+  const history = useHistory();
   const [allData,setAllData] = useState([]);
 
   useEffect(() => {
@@ -45,17 +45,22 @@ allData.map((user: any) => {
    })
    return data;
  });
+
+ const handleClick = () => {
+  history.push('/')
+}
   return (
     <div>
       <Row gutter={[40,10]}>
         <Col span={18}>
-          <Title>User Title</Title>
+          <Title level={2}>User Title</Title>
         </Col>
         <Col span={6}>
+          <Button onClick={handleClick} block>Add users</Button>
         </Col>
       </Row>
-      <Row>
-        <Col>
+      <Row gutter={[40,10]}>
+        <Col span={24}>
         <Table columns={columns} dataSource={data}/>
         </Col>
       </Row>
@@ -65,4 +70,4 @@ allData.map((user: any) => {
 
 
 
-export default List
+export default List;
