@@ -1,6 +1,5 @@
 import React from 'react';
 import { Menu } from 'antd';
-import './head.scss'
 import {
     UserOutlined,
     VideoCameraOutlined,
@@ -20,7 +19,7 @@ const handleFileClick = () => {
     }
 return (
       <div>
-        <div className='head'></div>
+        <div style={{height: "32px", background: "rgba(255, 255, 255, 0.2)", margin: "16px"}}></div>
             <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
                 <Menu.Item key="1" onClick={handleUserClick}>
                     <UserOutlined />
