@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "username": "taiwo Adetona",
+      "email": "adetonat@ymail.com",
+      "gender": "male",
+      "hobbies": [
+        "Singing",
+        "Writing"
+      ],
+      "review": 14,
+      "notificaiton": true,
+      "id": 1
+    },
+    {
+      "username": "waliyy",
+      "email": "adetonat@yami.kg",
+      "gender": "female",
+      "hobbies": [
+        "Reading",
+        "Coding"
+      ],
+      "review": 44,
+      "notificaiton": true,
+      "id": 2
+    }
+  ]
+}
