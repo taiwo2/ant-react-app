@@ -1,3 +1,6 @@
+
+## form Preview 
+  ![form](./form.png)
 # Getting Started 
 
 Clone the repo 
